@@ -182,9 +182,9 @@ console.log("Task 4 ");
     // demeli bu function nece isleyir evvelce arrayde olan her value'nu 2'ye bolunmesinde qaliq qalmirsa
     // if'a daxil. Yox eger qaliq qalirsa false olaraq dovur dayanir.
     // if'e daxil olduqdan sonra bir let deyisen yaradiram ve if'e daxil olan adedi deyisenen menimsedirem.
-    // sonra deyiseni for dovurune salib ededi 2ye bole bole gedilir ve sonda alinan eded eger 1 beraber
+    // sonra deyiseni for dovurune salib  ededi 2ye bole bole gedilir ve sonda alinan eded eger 1 beraber
     // olarsa if edaxil olur beraber olmursa return olaraq dovur bitir.if'e daxil olduqda say deyiseni declare
     // etmisem ve o 1 vahid olaraq artir.
 
-    //  ve eger sertler dogrudursa dovur devam edir fe sonda array.length == say'a  beraberdise 
+    //  ve eger sertler dogrudursa dovur devam edir fe sonda array.length == say'a  beraberdise,
     // Answer:  console.log("true")
