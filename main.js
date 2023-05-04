@@ -73,6 +73,7 @@ console.log("sampleArr :" + sampleArr);
 //slice() methodu ise eslinde oda oxsardi kesir yalniz o orjinal arraye toxunmur yeni array yaradir .
 
 //Bele bir functionda yaza bilerik buda cavab olaraq  >> [15, -22, 47]
+//                      2ci hell yolu
 let newArr = sampleArr.filter(function (numbers) {
     if (numbers != 0) {
         return typeof numbers === 'number' && !isNaN(numbers);
