@@ -31,20 +31,23 @@ console.log("numbers Arr :" + numbers);
 
 let complexArr = [[1, 2, 3], [100, 2, 1, 10]];
 
-let simpleArr = complexArr.flatMap((s, i) => {
-    return s
-})
+let newarr= [];
+for (let i = 0; i < complexArr.length-1; i++) {
+    newarr += Array.from(new Set([...complexArr[i], ...complexArr[i+1]]));
+}
+
 console.log("------------------------------------------------")
 console.log("Task 2");
 
-console.log("simpleArr :" + simpleArr);
+console.log("yeni array :" + newarr);
+//burda arrayinicindeki her bir arrayi yeni yratigimiz arraye set eledik.
 
 // s >> burda bir array'e yigib qaytarmasini edir.
 //  i >> is erray'in nece dereceli oldugunu gosterir yeni ic-ice array'. Meselen burda i = 2;
 
 //flatMap  yeni bi array donderir yeni orjinalini deyismir 
 //eger console.log(complexArr); --> yazsaq orjinalin deyismediyini goreceyik.
-console.log("complexArr :" + complexArr);
+console.log("orjinal array :" + complexArr);
 
 //flatMap eslinde 2 methodun birlesmesi deye bielrik float() ve map()
 //flat() arrayin icindeki array'leri arrayden cixararaq bir arraya duzur
@@ -76,7 +79,7 @@ console.log("sampleArr :" + sampleArr);
 //                      2ci hell yolu
 let newArr = sampleArr.filter(function (numbers) {
     if (numbers != 0) {
-        return typeof numbers === 'number' && !isNaN(numbers);
+        return typeof numbers === 'number';
     }
 });
 
